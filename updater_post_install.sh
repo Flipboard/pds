@@ -64,6 +64,8 @@ echo "PDS_CRAWLERS=${pds_crawlers}" >> /tmp/env.production
 echo "LOG_ENABLED=${pds_log_enabled}" >> /tmp/env.production
 echo "PDS_EMAIL_SMTP_URL=${pds_email_smtp_url}" >> /tmp/env.production
 echo "PDS_EMAIL_FROM_ADDRESS=${pds_email_from_address}" >> /tmp/env.production
+echo "NODE_ENV=production" >> /tmp/env.production
+echo "PDS_PORT=3000" >> /tmp/env.production
 
 sudo mv "/tmp/env.production" "${TARGET_DIR}/pds.env"
 
