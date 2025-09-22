@@ -16,6 +16,7 @@ TARGET_DIR="/home/bluesky"
 DATE=$(date +%Y%m%dT%H%M)
 
 # save 1 level of backups
+sudo mkdir -p "${TARGET_DIR}"
 sudo chmod -f 755 "${TARGET_DIR}"
 sudo rm -rfd "${TARGET_DIR}/"backup.*
 sudo mkdir "${TARGET_DIR}/backup.${DATE}"
