@@ -73,5 +73,6 @@ sudo chown -R ubuntu:ubuntu /home/bluesky
 # get packages
 cd /ebsa/bluesky/current/service
 npm install --production --frozen-lockfile
+ln -s /home/bluesky/pds.env .
 
 exit 0
