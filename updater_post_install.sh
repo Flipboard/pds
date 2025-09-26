@@ -35,6 +35,8 @@ pds_admin_password="$(grep bluesky.admin_password /ebsa/config/services.config |
 pds_plc_rotation="$(grep bluesky.plc_rotation /ebsa/config/services.config | cut -d '=' -f 2 | head -1)"
 pds_data_directory="$(grep bluesky.data_directory /ebsa/config/services.config | cut -d '=' -f 2 | head -1)"
 pds_blobstore_disk_location="$(grep bluesky.blobstore_disk_location /ebsa/config/services.config | cut -d '=' -f 2 | head -1)"
+pds_blobstore_s3_bucket="$(grep bluesky.blobstore_s3_bucket /ebsa/config/services.config | cut -d '=' -f 2 | head -1)"
+pds_blobstore_s3_region="$(grep bluesky.blobstore_s3_region /ebsa/config/services.config | cut -d '=' -f 2 | head -1)"
 pds_blob_upload_limit="$(grep bluesky.blob_upload_limit /ebsa/config/services.config | cut -d '=' -f 2 | head -1)"
 pds_did_plc_url="$(grep bluesky.did_plc_url /ebsa/config/services.config | cut -d '=' -f 2 | head -1)"
 pds_app_view_url="$(grep bluesky.app_view_url /ebsa/config/services.config | cut -d '=' -f 2 | head -1)"
@@ -53,7 +55,9 @@ echo "PDS_JWT_SECRET=${pds_jwt_secret}" >> /tmp/env.production
 echo "PDS_ADMIN_PASSWORD=${pds_admin_password}" >> /tmp/env.production
 echo "PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX=${pds_plc_rotation}" >> /tmp/env.production
 echo "PDS_DATA_DIRECTORY=${pds_data_directory}" >> /tmp/env.production
-echo "PDS_BLOBSTORE_DISK_LOCATION=${pds_blobstore_disk_location}" >> /tmp/env.production
+#echo "PDS_BLOBSTORE_DISK_LOCATION=${pds_blobstore_disk_location}" >> /tmp/env.production
+echo "PDS_BLOBSTORE_S3_BUCKET=${pds_blobstore_s3_bucket}" >> /tmp/env.production
+echo "PDS_BLOBSTORE_S3_REGION=${pds_blobstore_s3_region}" >> /tmp/env.production
 echo "PDS_BLOB_UPLOAD_LIMIT=${pds_blob_upload_limit}" >> /tmp/env.production
 echo "PDS_DID_PLC_URL=${pds_did_plc_url}" >> /tmp/env.production
 echo "PDS_BSKY_APP_VIEW_URL=${pds_app_view_url}" >> /tmp/env.production
