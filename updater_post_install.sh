@@ -72,6 +72,21 @@ echo "PDS_PORT=3000" >> /tmp/env.production
 echo "PDS_INVITE_CODE_REQUIRED=true" >> /tmp/env.production
 echo "PDS_PRIVACY_POLICY_URL=https://about.surf.social/privacy-policy/" >> /tmp/env.production
 echo "PDS_TERMS_OF_SERVICE_URL=https://about.surf.social/terms-of-service/" >> /tmp/env.production
+echo "PDS_CONTACT_EMAIL_ADDRESS=support@surf.social" >> /tmp/env.production
+# PDS_SERVICE_DID
+# PDS_SERVICE_NAME
+# PDS_VERSION
+# PDS_SUPPORT_URL
+# PDS_HOME_URL
+# PDS_LOGO_URL
+# PDS_ACCOUNT_DB_LOCATION
+# PDS_SERVICE_HANDLE_DOMAINS
+# PDS_ACTOR_STORE_DIRECTORY
+# PDS_ACTOR_STORE_CACHE_SIZE
+# PDS_BLOB_UPLOAD_LIMIT
+# PDS_RATE_LIMITS_ENABLED
+# PDS_RATE_LIMIT_BYPASS_KEY
+# PDS_RATE_LIMIT_BYPASS_IPS
 
 sudo mv "/tmp/env.production" "${TARGET_DIR}/pds.env"
 
