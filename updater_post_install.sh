@@ -71,6 +71,8 @@ echo "PDS_EMAIL_FROM_ADDRESS=${pds_email_from_address}" >> /tmp/env.production
 echo "NODE_ENV=production" >> /tmp/env.production
 echo "PDS_PORT=3000" >> /tmp/env.production
 echo "PDS_INVITE_CODE_REQUIRED=true" >> /tmp/env.production
+echo "PDS_PRIVACY_POLICY_URL=https://about.surf.social/privacy-policy/" >> /tmp/env.production
+echo "PDS_TERMS_OF_SERVICE_URL=https://about.surf.social/terms-of-service/" >> /tmp/env.production
 
 sudo mv "/tmp/env.production" "${TARGET_DIR}/pds.env"
 
