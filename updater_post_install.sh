@@ -94,7 +94,7 @@ sudo mv "/tmp/env.production" "${TARGET_DIR}/pds.env"
 sudo chown -R ubuntu:ubuntu /home/bluesky
 
 # get packages
-cd /ebsa/bluesky/current/service
+cd ${SRC_DIR}/service
 npm install --production --frozen-lockfile
 ln -s /home/bluesky/pds.env .
 
