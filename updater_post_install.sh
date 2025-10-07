@@ -95,9 +95,9 @@ sudo chown -R ubuntu:ubuntu /home/bluesky
 
 # get packages
 cd ${SRC_DIR}/service
-source /home/ubuntu/.bashrc
-source /home/ubuntu/.nvm/nvm.sh
-npm install --production --frozen-lockfile
+#source /home/ubuntu/.bashrc
+#source /home/ubuntu/.nvm/nvm.sh
+#npm install --production --frozen-lockfile
 ln -s /home/bluesky/pds.env .
 
 exit 0
