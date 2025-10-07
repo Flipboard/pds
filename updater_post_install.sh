@@ -55,6 +55,7 @@ echo "PDS_JWT_SECRET=${pds_jwt_secret}" >> /tmp/env.production
 echo "PDS_ADMIN_PASSWORD=${pds_admin_password}" >> /tmp/env.production
 echo "PDS_PLC_ROTATION_KEY_K256_PRIVATE_KEY_HEX=${pds_plc_rotation}" >> /tmp/env.production
 echo "PDS_DATA_DIRECTORY=${pds_data_directory}" >> /tmp/env.production
+#echo "PDS_BLOBSTORE_DISK_LOCATION=${pds_blobstore_disk_location}" >> /tmp/env.production
 echo "PDS_BLOBSTORE_S3_BUCKET=${pds_blobstore_s3_bucket}" >> /tmp/env.production
 echo "PDS_BLOBSTORE_S3_REGION=${pds_blobstore_s3_region}" >> /tmp/env.production
 echo "PDS_BLOB_UPLOAD_LIMIT=${pds_blob_upload_limit}" >> /tmp/env.production
