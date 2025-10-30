@@ -97,8 +97,7 @@ sudo chown -R ubuntu:ubuntu /home/bluesky
 
 # get packages
 cd ${SRC_DIR}/service
-aws codeartifact login --tool npm --repository npm-internal --domain flnode --domain-owner 792860931134 --region us-east-1
-npm install --production 
+npm install --production --frozen-lockfile
 ln -s /home/bluesky/pds.env .
 
 exit 0
