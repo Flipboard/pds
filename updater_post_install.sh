@@ -98,7 +98,7 @@ sudo chown -R ubuntu:ubuntu /home/bluesky
 # get packages
 cd ${SRC_DIR}/service
 #npm install --production --frozen-lockfile
-npm install --omit=dev --ci --registry=https://registry.npmjs.or
+npm install --omit=dev --registry=https://registry.npmjs.org
 ln -s /home/bluesky/pds.env .
 
 exit 0
